@@ -895,7 +895,7 @@ function translateEnToFr(englishString, enToFrMap) {
             dimensionInfoMap.forEach(function (d) {
               if (dimensionId == d.indic_label) {
                 if(lang=="en")
-                definition = "<b>" + d.indic_name + "</b><br/>" + d.description;
+                definition = "<b>" + d.indic_name + "</b><br/>" + d.description + "<br/><br/><b>Headline indicators:</b>" + d.headline_indicator;
               else
               definition = "<b>" + translateEnToFr(d.indic_name ,enToFrMap)+ "</b><br/>" +translateEnToFr(d.description ,enToFrMap);
               }
